@@ -61,16 +61,16 @@ int main(int argc, const char * argv[]) {
 //				break;
 //		}
 //	}
-	EmpData* data = Factory::splitStringToData("1;Петр Иванович;8;0;15;20", ";");
-	SeniorManager* emp = (SeniorManager*)Factory::createEmployee(data);
+	// EmpData* data = Factory::splitStringToData("1;Петр Иванович;8;0;15;20", ";");
+	// SeniorManager* emp = (SeniorManager*)Factory::createEmployee(data);
 	
-	data = Factory::splitStringToData("1;Петр Иванович;7;0;10;20", ";");
-	ProjectManager* emp2 = (ProjectManager*)Factory::createEmployee(data);
-	emp->addProjectManager(emp2);
-	emp->addProjectManager(emp2);
-	emp->addProjectManager(emp2);
-	emp->calcSalary(20, 600000, 400);
-	std::cout << emp->getPayment() << std::endl;
+	// data = Factory::splitStringToData("1;Петр Иванович;7;0;10;20", ";");
+	// ProjectManager* emp2 = (ProjectManager*)Factory::createEmployee(data);
+	// emp->addProjectManager(emp2);
+	// emp->addProjectManager(emp2);
+	// emp->addProjectManager(emp2);
+	// emp->calcSalary(20, 600000, 400);
+	// std::cout << emp->getPayment() << std::endl;
 	
 	return 0;
 }
