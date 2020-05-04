@@ -12,12 +12,6 @@ TEST(factory_tests, data_split_check) {
 	EXPECT_EQ(data->name, "Иванов Иван Иванович");
 }
 
-TEST(factory_tests, emp_create_check) {
-	EmpData* data = Factory::splitStringToData("1;Иванов Иван Иванович;1;1000;0;20", ";");
-	Employee* emp = Factory::createEmployee(data);
-	ASSERT_NE(emp, NULL);
-}
-
 TEST(salary_tests, cleaner_check) {
 	EmpData* data = Factory::splitStringToData("1;Зинка;1;1000;0;20", ";");
 	Employee* emp = Factory::createEmployee(data);
