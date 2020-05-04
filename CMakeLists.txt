@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 # Make PROJECT_SOURCE_DIR, PROJECT_BINARY_DIR, and PROJECT_NAME available.
-set(PROJECT_NAME staff) 
+set(PROJECT_NAME task1) 
 project(${PROJECT_NAME})
 
 set(CMAKE_CXX_FLAGS "-g -Wall")
@@ -29,10 +29,10 @@ set(SRC_FILES 	${PROJECT_SOURCE_DIR}/src/Cleaner.cpp
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_library(staff_lib ${SRC_FILES})
-add_executable(staff ${PROJECT_SOURCE_DIR}/src/main.cpp)
+add_library(task1_lib ${SRC_FILES})
+add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
-target_link_libraries(staff staff_lib)
+target_link_libraries(task1 task1_lib)
 
 ################################
 # Testing
